@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="head">
+        <span>Memory Game</span>
+      </div>
+      <div class="statics">
+        <!-- star rating -->
+        <div class="stat1">
+          <div class="stat1c">
+            <div class="rate">
+              <div class="stars-outer">
+                <div class="stars-inner" style="width:40%"></div>
+              </div>
+            </div>
+            <div class="moves pl-1">23 Moves</div>
+          </div>
+        </div>
+        <!-- timer -->
+        <div class="stat2">
+          <div class="stat2c">
+            <!-- timer -->
+            <div id="timer" class="pl-1">00:00</div>
+            <!-- reset btn-->
+            <div class="reset">
+              <img src="img/reset.png" alt="reset" class="img reset pl-1">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="body-container">
+        <!-- grid here -->
+        <div class="grid">
+          <table class="tb">
+            <tr class="r1 r">
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img13"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img14"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img15"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img16"></td>
+            </tr>
+            <tr class="r1 r">
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img1"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img2"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img3"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img4"></td>
+            </tr>
+            <tr class="r1 r">
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img5"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img6"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img7"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img8"></td>
+            </tr>
+            <tr class="r1 r">
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img9"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img10"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img11"></td>
+              <td id="td1" class="td"><img src="img/im1.png" alt="img1" class="img img12"></td>
+            </tr>
+          </table>
+        </div>
+        <!-- Popup -->
+        <div class="popup-container">
+          <div class="popup">
+            <!-- title -->
+            <div class="head-text">Start Game</div>
+            <!-- rating -->
+            <div class="rateOut">
+              <div class="stars-outer">
+                <div class="stars-inner rateLen" style="width:40%"></div>
+              </div>
+            </div>
+            <!-- restart btn -->
+            <div id="reset"><button id="start-btn"><img src="img/reset3.png" alt="restart"></button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

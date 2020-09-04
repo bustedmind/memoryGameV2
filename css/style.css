@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fontawesome-webfont.eot')
+  format('embedded-opentype'),
+  url('fontawesome-webfont.woff'),
+  url('fontawesome-webfont.ttf')format('truetype')
+}
+div{
+  /* border: 1px solid red;  */
+}
+
+*{
+  box-sizing: border-box;
+}
+body, .main{
+  height: 100%;
+  width: 100%;
+  padding : 0px;
+  margin : 0px;
+  font-size: 16px;
+  background-color: #fefefe;
+}
+.container{
+  width: auto;
+  max-width: 450px;
+  height: 100%;
+  display: table;
+  margin: 0px auto;
+  overflow: hidden;
+
+}
+
+.head,.statics, .grid{
+  width: 100%;
+  height: auto;
+}
+.head{
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+.head span{
+  color: #197552;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+.statics{
+  background: none;
+  width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  display : inline-flex;
+  margin-top : 1.5em;
+  padding : 1em;
+}
+.stat1, .stat2{
+  height: auto;
+  max-height: 50px;
+  text-align: center;
+}
+.stat1{
+  width: 70%;
+}
+.stat2{
+  width: 30%;
+}
+.stat1c, .stat2c{
+  display: inline-flex;
+}
+
+.pl-1{
+  padding-left: 0.5em;
+}
+
+.reset{
+  height: auto;
+  width: auto;
+}
+.reset img{
+  height: 16px;
+  width: 30px;
+}
+@media screen and (min-width : 600px){
+  .stat1, .stat2{
+    width: 50%;
+  }
+  img{
+    max-width: 22px;
+    max-height: 22px;
+  }
+}
+
+@media screen and (max-width : 599px){
+  .stat1{
+    width: 60%;
+  }
+  .stat2{
+    width: 40%;
+  }
+}
+
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  }
+  
+  .stars-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+  }
+  
+  .stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  }
+  
+  .stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+  }
+  .body-container{
+    width: 100%;
+    height: 450px;
+    max-height: fit-content;
+    position: relative;
+  }
+  img{
+    height: auto;
+    width: auto;
+    max-width: 25px;
+  }
+
+  .grid{
+    width: 100%;
+    height: 80%;
+    max-height: 400px;
+    max-width: 400px;
+    display: table;
+    margin: 0px auto;
+  }
+  table{
+    border-radius: 12px;
+    width: 94%;
+    height: 92%;
+    margin: 3%;
+    background: #168aa7;
+    padding: 0px;
+    border-spacing: 13px;
+    border-right: 2px red;
+    background: linear-gradient(to right, #1c8cc0 0%, #282b09c0 100%);
+    opacity: 0.5;
+  }
+  td{
+    background-color: #3cd3ba;
+    margin: 8px;
+    border-radius: 5px;
+    transition : transform 0.2s;
+    text-align: center;
+  }
+
+  .grid, .popup-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .popup-container{
+    width: 100%;
+    height: 80%;
+    max-height: 400px;
+    max-width: 400px;
+    margin : 0 auto;
+    z-index: 100;
+    margin-top: 65px;
+  }
+  .popup{
+    position: relative;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #122c23;
+    background: linear-gradient(to right, #90ceeb 0%, #d6d8bcc0 100%);
+    animation: zoom 1s ;
+    box-shadow: 0 0 10px 5px #126e1a99;
+    text-align: center;
+  }
+
+  @keyframes zoom{
+    0%{
+      transform: scale(1);
+    }
+    60%{
+      transform: scale(1.8);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+  .head-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-top: 0.6em;
+  }
+
+  button{
+    height: 60%;
+    width: 60%;
+    min-width: 45px;
+    min-height: 45px;
+    background: #689fcf60;
+    border-radius: 9px;
+    margin: 10px;
+    position: relative;
+  }
+  button img{
+    height: 50px;
+    width: 50px;
+  }
+  /* .popup-container{
+    display: none;
+  } */
+
+  .td_zoom{
+    transform: scale(1.1);
+    background-color: #2eca48 ;
+    pointer-events: none;
+
+  }
+
+  .td_shake{
+    animation: shake 0.2s;
+    animation-iteration-count: 1;
+    background-color: #e0522f;
+  }
+
+  @keyframes shake{
+    0%{
+      transform: translate(1px,1px) rotate(0deg);
+    }
+    20%{
+      transform: translate(-1px,-2px) rotate(-1deg);
+    }
+    40%{
+      transform: translate(-3px,0px) rotate(1deg);
+    }
+    60%{
+      transform: translate(3px,2px) rotate(0deg);
+    }
+    80%{
+      transform: translate(1px,-1px) rotate(1deg);
+    }
+    100%{
+      transform: translate(-1px,2px) rotate(-1deg);
+    }
+  }
